@@ -8,6 +8,13 @@ const newsFeedPage = document.querySelector(".feeds-page");
 const LoginModal = document.querySelector(".login-modal");
 const LoginModalcroix = document.querySelector(".croix");
 const LoginFormBtn = document.querySelector(".login-form-btn");
+const PostBtn = document.querySelector(".post-btn");
+const modalWrapper = document.querySelector(".modal-wrapper");
+const modal = document.querySelector(".modal");
+const modalExit = document.querySelector(".modal-header i");
+const modalPostBtn = document.querySelector(".modal-header button");
+const modalFooterPlus = document.querySelector(".modal-header span");
+const modalInput = document.querySelector(".modal-input");
 
 // *****************************************************
 
@@ -53,5 +60,40 @@ LoginFormBtn.addEventListener("click",()=>{
         newsFeedPage.style.display="block"
     }else{
         LoginModal.style.display="block";
+    }
+})
+
+// post modal 
+
+PostBtn.addEventListener("click",()=>{
+    modal.style.display="block";
+    modalWrapper.classList.add('modal-wrapper-display');
+});
+
+const changeOpacity= (x)=>{
+    modalPostBtn.style.opacity=x;
+    modalFooterPlus.style.opacity=x;
+};
+
+modalExit.addEventListener("click",()=>{
+    modal.style.display="none";
+    modalWrapper.classList.remove('modal-wrapper-display');
+
+    if(modalInput.value !== ""){
+        modalInput.value="";
+        changeOpacity(.5);
+    }
+});
+
+modalInput.addEventListener("keypress",(e)=>{
+    if(e.target.value !== ""){
+        changeOpacity(1);
+    }
+}
+);
+
+modalInput.addEventListener("blur",(e)=>{
+    if(e.target.value === ""){
+        changeOpacity(0.5);
     }
 })

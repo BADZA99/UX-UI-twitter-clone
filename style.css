@@ -745,7 +745,14 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-wrapper-display{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
 }
 
 .modal{
@@ -756,6 +763,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 1.5rem;
+    display: none;
 }
 
 .modal-header{
