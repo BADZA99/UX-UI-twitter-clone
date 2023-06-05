@@ -1077,7 +1077,7 @@ background-color: #1c2938;
 }
 
 .dark-2{
-    background-color: #10171e;
+    background-color: #10171e !important;
 }
 
 .light{
@@ -1085,7 +1085,7 @@ background-color: #1c2938;
 }
 
 .border-color{
-    border-color: #444;
+    border-color: #444 !important;
 }
 /* dark mode  */
 

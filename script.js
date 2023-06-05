@@ -118,18 +118,29 @@ sidebarExit.addEventListener('click',()=>{
 })
 
 // dark mode 
-const darkElements1=document.querySelectorAll('.dark-mode-1')
-const darkElements2=document.querySelectorAll('.dark-mode-2')
+const darkElements1=document.querySelectorAll('.dark-mode-1');
+const darkElements2=document.querySelectorAll('.dark-mode-2');
+const lightElements = document.querySelectorAll(".light-text");
+const borders = document.querySelectorAll(".border");
+
 
 toggle.addEventListener('click',()=>{
     circle.classList.toggle('move');
-    
+
     Array.from(darkElements1).map((darkEl)=>{
         darkEl.classList.toggle('dark-1');
     })
 
     Array.from(darkElements2).map((darkEl)=>{
         darkEl.classList.toggle('dark-2');
+    })
+
+    Array.from(lightElements).map((lightEl)=>{
+        lightEl.classList.toggle('light');
+    })
+
+    Array.from(borders).map((border)=>{
+        border.classList.toggle('border-color');
     })
 }
 )
