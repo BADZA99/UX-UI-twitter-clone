@@ -1019,7 +1019,7 @@ body {
 
 .sidebar-list-2 ul{
     list-style-type: none;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .sidebar-list-2 li{
@@ -1031,6 +1031,63 @@ body {
     color: #333;
     text-decoration: none;
 }
+
+/* dark mode  */
+
+.dark-mode{
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode p{
+    margin-right: 8rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+ .toggle{
+    width: 4.5rem;
+    height:1.5rem;
+    background-color: #777;
+    border-radius:3rem ;
+    box-shadow: inset 0 .2rem 1rem rgba(0, 0, 0, 0.5) ;
+    position: relative;
+ }
+
+ .circle{
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    transition: all 0.5s;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+ }
+
+.move{
+left: 2.5rem;
+background-color: #117abb;
+}
+
+.dark-1{
+background-color: #1c2938;
+}
+
+.dark-2{
+    background-color: #10171e;
+}
+
+.light{
+    color: #fff;
+}
+
+.border-color{
+    border-color: #444;
+}
+/* dark mode  */
 
 
 /* sidebar */
