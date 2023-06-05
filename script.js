@@ -15,6 +15,11 @@ const modalExit = document.querySelector(".modal-header i");
 const modalPostBtn = document.querySelector(".modal-header button");
 const modalFooterPlus = document.querySelector(".modal-header span");
 const modalInput = document.querySelector(".modal-input");
+const user = document.querySelector(".user");
+const sidebar = document.querySelector(".sidebar");
+const sidebarwrapper = document.querySelector(".sidebar-wrapper");
+const sidebarExit = document.querySelector(".sidebar-header i ");
+
 
 // *****************************************************
 
@@ -96,4 +101,16 @@ modalInput.addEventListener("blur",(e)=>{
     if(e.target.value === ""){
         changeOpacity(0.5);
     }
+})
+
+// sidebar 
+
+user.addEventListener('click',()=>{
+    sidebar.classList.toggle('sidebar-display');
+    sidebarwrapper.classList.toggle('sidebar-wrapper-display');
+})
+
+sidebarExit.addEventListener('click',()=>{
+    sidebar.classList.remove('sidebar-display');
+    sidebarwrapper.classList.remove('sidebar-wrapper-display');
 })

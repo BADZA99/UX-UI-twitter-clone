@@ -1,38 +1,42 @@
 /* common styles */
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     outline: none;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     background-color: #f0f8fd;
 }
+
 /* end of common styles */
 
 /* main-page */
-.main-page{
+.main-page {
     width: 100%;
     height: 100vh;
     display: none;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr min-content;
 }
+
 /* end of main-page */
 
 /* left */
-.left{
-    grid-column:1/2 ;
-    grid-row: 1/2 ;
+.left {
+    grid-column: 1/2;
+    grid-row: 1/2;
     background-color: #1aa1f5;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .left-content div {
     display: flex;
     align-items: center;
@@ -40,31 +44,32 @@ body{
     color: white;
 }
 
-.left-content i{
+.left-content i {
     font-size: 3rem;
     margin-right: 2rem;
 }
 
-.left-content-heading{
+.left-content-heading {
     font-size: 2rem;
 }
+
 /* end of left */
 
 /* right */
 
-.right{
+.right {
     grid-column: 2/-1;
     grid-row: 1/2;
-   position: relative;
+    position: relative;
 }
 
-.right-content-form{
+.right-content-form {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
 }
 
-.right-content-form label{
+.right-content-form label {
     position: absolute;
     top: 5.5rem;
     left: 0;
@@ -73,11 +78,11 @@ body{
     color: #a7a6a6;
 }
 
-.btn-top{
+.btn-top {
     width: 8rem;
     background-color: #fff;
     color: #1aa1f5;
-    border:0.1rem solid #1aa1f5;
+    border: 0.1rem solid #1aa1f5;
     border-radius: 3rem;
     font-size: 1.4rem;
     font-weight: bold;
@@ -85,58 +90,61 @@ body{
     transition: all .5s ease-in-out;
 }
 
-.btn-top:hover{
+.btn-top:hover {
     background-color: #1aa1f5;
     color: #fff;
-    border:0.1rem solid #fff;
+    border: 0.1rem solid #fff;
     transition: all .3s ease-in-out;
 }
-.right-content-form div{
+
+.right-content-form div {
     position: relative;
 }
-.right-content-form input{
-   width: 20rem;
-   height: 4.5rem;
-   margin-right: 1rem;
-   font-size: 1.6rem;
-   padding: 0 1rem;
-   border: .1rem solid #ddd ;
-   border-radius: .5rem;
-   background-color: #fff;
+
+.right-content-form input {
+    width: 20rem;
+    height: 4.5rem;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    border: .1rem solid #ddd;
+    border-radius: .5rem;
+    background-color: #fff;
     transition: all .3s ease-in-out;
 }
 
-.right-content-form input:focus{
-   background-color: #d9ebf7; 
+.right-content-form input:focus {
+    background-color: #d9ebf7;
 }
 
-.middle-content{
+.middle-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     width: 40%;
 }
 
-.middle-content i{
+.middle-content i {
     font-size: 3rem;
     color: #1aa1f5;
     margin-bottom: 2rem;
 }
 
-.middle-content h1{
+.middle-content h1 {
     font-size: 2.8rem;
     margin-bottom: 4rem;
     line-height: 4rem;
 }
 
-.middle-content h4{
+.middle-content h4 {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
-.middle-content button{
+
+.middle-content button {
     padding: .5rem;
     margin: .8rem 0;
     border: .1rem solid #1aa1f5;
@@ -146,39 +154,40 @@ body{
     transition: background-color .3s;
 }
 
-.sign-up{
-   background-color: #1aa1f5;
-   color: #fff;
+.sign-up {
+    background-color: #1aa1f5;
+    color: #fff;
 }
 
-.sign-up:hover{
+.sign-up:hover {
     background-color: #0f5d8d;
 }
 
 
-.log-in{
+.log-in {
     background-color: #fff;
 }
 
-.log-in:hover{
+.log-in:hover {
     background-color: #d9ebf7;
 }
+
 /* end of right */
 
 /* footer */
 
-.main-page-footer{
+.main-page-footer {
     grid-column: 1/-1;
     grid-row: 2/-1;
     background-color: #f5f4f4;
     padding: 1.5rem;
-    border-top:.1rem solid #ddd;
+    border-top: .1rem solid #ddd;
 }
 
-.main-page-footer ul{
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
+.main-page-footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 }
 
 .main-page-footer a {
@@ -190,50 +199,52 @@ body{
     transition: color .3s;
 
 }
+
 /* end of footer */
 
 /* login page */
-.login-page{
+.login-page {
     width: 100%;
     height: 100vh;
     display: none;
-    grid-template-columns: minmax(5rem,1fr) 2fr minmax(5rem,1fr);
-    grid-template-rows: repeat(2,min-content) 1fr;
+    grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
+    grid-template-rows: repeat(2, min-content) 1fr;
     grid-row-gap: 1.5rem;
 
 }
 
 /* login page nav */
-.login-page-nav{
+.login-page-nav {
     grid-column: 1/-1;
     grid-row: 1/2;
     background-color: #fff;
     padding: 2.5rem 0;
-    box-shadow: 0 0 .7rem rgba(0,0,0,.3);
+    box-shadow: 0 0 .7rem rgba(0, 0, 0, .3);
     z-index: 1;
 }
 
-.login-page-nav ul{
-  width: 100rem;
-  margin: auto;
-  display: flex;
-  align-items: flex-end;
-  list-style: none;
+.login-page-nav ul {
+    width: 100rem;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
 }
 
-.login-page-nav li{
+.login-page-nav li {
     margin: 0 1rem;
     position: relative;
 }
-.login-page-nav li:last-child{
+
+.login-page-nav li:last-child {
     margin-left: auto;
     list-style-type: none;
 }
 
-.login-page-nav li::after{
+.login-page-nav li::after {
     content: "";
     width: 100%;
-    height:0.4rem;
+    height: 0.4rem;
     background-color: #1aa1f5;
     position: absolute;
     bottom: -2.5rem;
@@ -242,7 +253,7 @@ body{
     transition: opacity .3s;
 }
 
-.login-page-nav li:hover::after{
+.login-page-nav li:hover::after {
     opacity: 1;
 }
 
@@ -251,7 +262,7 @@ body{
     text-decoration: none;
     color: #555;
     transition: color .3s;
-    
+
 }
 
 .login-page-nav li:hover a {
@@ -260,7 +271,7 @@ body{
 }
 
 
-.login-page-nav i{
+.login-page-nav i {
     font-size: 1.6rem;
     text-decoration: none;
     color: #1aa1f5;
@@ -268,36 +279,36 @@ body{
 
 /* login page nav */
 /* login */
-.login{
-    grid-column:2/3;
+.login {
+    grid-column: 2/3;
     grid-row: 2/3;
     background-color: #fff;
     width: 100rem;
     display: grid;
     grid-template-columns: 10rem 8fr;
     grid-template-rows: 2fr 1fr;
-    box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
-    
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+
 }
 
-.login-content{
+.login-content {
     grid-column: 2/-1;
     grid-row: 1/2;
     padding: 5rem 0rem 1rem 1rem 0;
-    
+
 }
 
-.login-content h2{
+.login-content h2 {
     font-size: 2.4rem;
     margin-bottom: 3rem;
 }
 
-.login-form{
+.login-form {
     display: flex;
     flex-direction: column;
 }
 
-.login-form input:not(.login-form-checkbox){
+.login-form input:not(.login-form-checkbox) {
     width: 30rem;
     height: 3.5rem;
     margin-bottom: 1rem;
@@ -308,52 +319,52 @@ body{
     transition: background-color .3s;
 }
 
-.login-form div{
-   margin-top: 2rem; 
+.login-form div {
+    margin-top: 2rem;
 }
 
-.login-form button{
+.login-form button {
     padding: 1rem 1.5rem;
     background-color: #1aa1f5;
     color: #fff;
     border-radius: 4rem;
-    border:.1rem solid #1aa1f5;
+    border: .1rem solid #1aa1f5;
     font-size: 1.6rem;
     font-weight: bold;
     cursor: pointer;
     margin-right: 1rem;
 }
 
-.login-form label{
+.login-form label {
     font-size: 1.5rem;
     font-weight: lighter;
     margin-right: 1rem;
 }
 
-.login-form a{
+.login-form a {
     font-size: 1.6rem;
     color: #1aa1f5;
     text-decoration: none;
     transition: color .3s;
 }
 
-.login-form input:focus{
+.login-form input:focus {
     background-color: #d9ebf7;
 }
 
-.login-footer{
+.login-footer {
     grid-column: 1/-1;
     grid-row: 2/-1;
     background-color: #edf3f7;
     padding-left: 100px;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     margin-top: 2rem;
 
 }
 
-.login-footer p{
+.login-footer p {
     font-size: 1.6rem;
     margin: 0.5rem 0;
     font-weight: 300;
@@ -367,57 +378,58 @@ body{
 /* end of login */
 
 /* login modal */
-.login-modal{
+.login-modal {
     position: fixed;
-    top:11.5rem;
-    left:50%;
-    transform: translate(-50%,-50%);
-    background-color:#fff ;
+    top: 11.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
     width: 70rem;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 0 0.7rem rgba(0,0,0,.3);
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, .3);
     border-radius: 0 0 1rem 1rem;
     display: none;
 }
 
-.login-modal i{
+.login-modal i {
     position: absolute;
     top: 2rem;
     right: 2rem;
     font-size: 1.3rem;
-    color:#868383;
+    color: #868383;
     cursor: pointer;
 }
 
-.login-modal p{
+.login-modal p {
     font-size: 1.6rem;
     margin: 2rem 1rem 0 1rem;
     color: #868383;
 }
+
 /* login modal */
 
 /* login page */
 
 /* feeds page */
-.feeds-page{
+.feeds-page {
     width: 100%;
     height: 100vh;
     display: block;
 }
 
 /* feeds nav */
-.feeds-nav{
+.feeds-nav {
     position: fixed;
     width: 100%;
     height: 6.5rem;
     background-color: #fff;
     display: flex;
     justify-content: center;
-    box-shadow: 0 0 0.7rem rgba(0,0,0,.3);
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, .3);
 }
 
-.icons{
+.icons {
     display: flex;
     align-items: center;
 }
@@ -429,17 +441,17 @@ body{
     color: #9e9a9a;
 }
 
-.icons .active{
+.icons .active {
     color: #1aa1f5;
 }
 
-.search-bar{
+.search-bar {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.search-bar input{
+.search-bar input {
     width: 35rem;
     height: 3.5rem;
     border: .1rem solid #d6e1e9;
@@ -449,66 +461,67 @@ body{
     font-size: 1.5rem;
 }
 
-.search-bar-input:focus{
+.search-bar-input:focus {
     background-color: #fff;
     border-color: #1aa1f5;
 }
 
-.search-bar i{
+.search-bar i {
     position: absolute;
     left: 1.5rem;
     font-size: 2rem;
     color: #9e9a9a;
 }
 
-.user{
+.user {
     margin-left: 3rem;
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.user-img-wrapper{
+.user-img-wrapper {
     width: 4rem;
     height: 4rem;
 }
 
-.user-img-wrapper img{
+.user-img-wrapper img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.user-link{
+.user-link {
     margin: 0 1rem;
     text-decoration: none;
     font-size: 1.8rem;
     color: #444;
 }
 
-.user i{
+.user i {
     font-size: 1.6rem;
     color: #444;
 }
+
 /* feeds nav */
 
 /* feeds content */
-.feeds-content{
+.feeds-content {
     display: grid;
-    grid-template-columns: minmax(5rem,1fr) 60rem 40rem  minmax(5rem,1fr);
-    grid-template-rows: repeat(2,min-content);
+    grid-template-columns: minmax(5rem, 1fr) 60rem 40rem minmax(5rem, 1fr);
+    grid-template-rows: repeat(2, min-content);
     padding-top: 6.5rem;
 }
 
-.feeds-header{
+.feeds-header {
     grid-column: 2/3;
     grid-row: 1/2;
     background-color: #fff;
-    margin-top:1.5rem;
+    margin-top: 1.5rem;
 }
 
-.header-top{
+.header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -517,127 +530,127 @@ body{
     padding-top: 1.5rem;
 }
 
-.header-top h4{
+.header-top h4 {
     font-size: 2.2rem;
 }
 
-.header-top i{
+.header-top i {
     font-size: 2rem;
     color: #1aa1f5;
     cursor: pointer;
 }
 
-.header-post{
+.header-post {
     display: flex;
     align-items: center;
     padding: 1rem;
     border-bottom: .1rem solid #eee;
 }
 
-.header-img-wrapper{
+.header-img-wrapper {
     width: 4rem;
     height: 4rem;
-    margin-right: 1.5rem ;
+    margin-right: 1.5rem;
 }
 
-.header-img-wrapper img{
+.header-img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.header-post input{
+.header-post input {
     width: 35rem;
     height: 3rem;
     border: .1rem solid #d6e1e9;
     border-radius: 3rem;
     background-color: #d6e1e9;
-    padding:.4rem 1.5rem;
+    padding: .4rem 1.5rem;
 }
 
-.header-post i{
+.header-post i {
     font-size: 2.5rem;
     color: #1aa1f5;
     margin: 1rem;
 }
 
-.posts{
+.posts {
     grid-column: 2/3;
     grid-row: 2/-1;
     background-color: #fff;
 }
 
-.user-avatar{
+.user-avatar {
     width: 6rem;
     height: 6rem;
     flex-shrink: 0;
     margin-right: 0.5rem;
 }
 
-.user-avatar img{
+.user-avatar img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.post-user-info{
+.post-user-info {
     display: flex;
     align-items: center;
-    margin: 1rem 0 ;
+    margin: 1rem 0;
 }
 
-.post-user-info i{
+.post-user-info i {
     font-size: 1.6rem;
     color: #1aa1f5;
     margin-right: .5rem;
 }
 
-.post-user-info h4{
+.post-user-info h4 {
     font-size: 1.6rem;
     margin-right: .5rem;
 }
 
-.post-user-info span{
+.post-user-info span {
     font-size: 1.6rem;
 }
 
-.post-text{
+.post-text {
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
-.post-img{
+.post-img {
     width: 48rem;
     height: 30rem;
     object-fit: cover;
 }
 
-.post-img img{
+.post-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
 }
 
-.post-icons{
+.post-icons {
     margin-top: 1rem;
 }
 
-.post-icons i{
+.post-icons i {
     font-size: 2rem;
     margin-right: 6rem;
     color: #868383;
     cursor: pointer;
 }
 
-.post{
+.post {
     display: flex;
-    padding: 1.5rem ;
-    border-bottom: .1rem solid #eee ;
+    padding: 1.5rem;
+    border-bottom: .1rem solid #eee;
 }
 
-.follow{
+.follow {
     position: fixed;
     top: 8rem;
     left: 57%;
@@ -645,20 +658,20 @@ body{
     width: 35rem;
 }
 
-.follow-heading{
+.follow-heading {
     padding: 1rem;
     font-size: 1.8rem;
     border-bottom: .1rem solid #eee;
 }
 
-.follow-user{
+.follow-user {
     display: flex;
     align-items: center;
     padding: 1.5rem;
     border-bottom: .1rem solid #eee;
 }
 
-.follow-user-img{
+.follow-user-img {
     width: 6rem;
     height: 6rem;
     margin-right: 2rem;
@@ -671,24 +684,24 @@ body{
     object-fit: cover;
 }
 
-.follow-user-info h4, .follow-user-info p{
+.follow-user-info h4, .follow-user-info p {
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
 
-.follow-btn{
+.follow-btn {
     margin-left: auto;
     width: 9rem;
     background-color: #fff;
     color: #1aa1f5;
     padding: .7rem 0.6rem;
-    border:0.1rem solid #1aa1f5;
+    border: 0.1rem solid #1aa1f5;
     border-radius: 2rem;
-    font-size: 1.6rem ;
+    font-size: 1.6rem;
     cursor: pointer;
 }
 
-.follow-link{
+.follow-link {
     margin: 2rem 1rem;
 }
 
@@ -698,25 +711,26 @@ body{
     font-size: 1.5rem;
 }
 
-.follow-footer{
+.follow-footer {
     background-color: #f0f8fd;
 }
 
-.follow-footer ul{
-  display: flex;
-  list-style-type: none;
-  padding: 2rem 0;
+.follow-footer ul {
+    display: flex;
+    list-style-type: none;
+    padding: 2rem 0;
 }
 
-.follow-footer a{
+.follow-footer a {
     text-decoration: none;
     color: #868383;
     font-size: 1rem;
     margin-right: 2rem;
 }
+
 /* feeds content */
 
-.post-btn{
+.post-btn {
     position: fixed;
     bottom: 2rem;
     left: 68%;
@@ -724,23 +738,23 @@ body{
     padding: 1.5rem 1rem;
     background-color: #1aa1f5;
     color: #fff;
-    font-size: 2rem ;
+    font-size: 2rem;
     border: .1rem solid #1aa1f5;
     border-radius: 3rem;
     cursor: pointer;
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3) ;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
     transition: background 0.3s;
 }
 
-.post-btn:hover{
+.post-btn:hover {
     background-color: #fff;
     color: #1aa1f5;
 }
 
 /* post modal */
-.modal-wrapper{
+.modal-wrapper {
     position: fixed;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
     right: 0;
@@ -749,37 +763,37 @@ body{
     visibility: hidden;
 }
 
-.modal-wrapper-display{
+.modal-wrapper-display {
     opacity: 1;
     visibility: visible;
     transition: all 0.3s;
 }
 
-.modal{
+.modal {
     width: 60rem;
     background: #fff;
     position: absolute;
     top: 25%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 1.5rem;
     display: none;
 }
 
-.modal-header{
+.modal-header {
     display: flex;
     align-items: center;
     padding: 1.5rem 2.5rem;
     border-bottom: .1rem solid #eee;
 }
 
-.modal-header i{
+.modal-header i {
     font-size: 2.3rem;
     color: #1aa1f5;
     cursor: pointer;
 }
 
-.modal-header button{
+.modal-header button {
     font-size: 2rem;
     margin-left: auto;
     width: 8rem;
@@ -787,29 +801,29 @@ body{
     background-color: #1aa1f5;
     color: #fff;
     border: .1rem solid #1aa1f5;
-    border-radius:3rem ;
-    opacity:.5;
+    border-radius: 3rem;
+    opacity: .5;
 }
 
-.modal-body{
+.modal-body {
     display: flex;
     padding: 2rem 1.5rem 1rem 1.5rem;
 }
 
-.modal-img{
-    width:4rem;
+.modal-img {
+    width: 4rem;
     height: 4rem;
     margin-right: 1.5rem;
 }
 
-.modal-img img{
+.modal-img img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.modal-input{
+.modal-input {
     width: 53rem;
     padding: 1rem 0 8rem 1rem;
     background-color: #d6e1e9;
@@ -818,35 +832,35 @@ body{
     font-size: 1.6rem;
 }
 
-.modal-input:focus{
+.modal-input:focus {
     background-color: #fff;
     border-color: #1aa1f5;
 }
 
-.modal-body i{
+.modal-body i {
     position: absolute;
     bottom: 8.5rem;
     right: 2.8rem;
     font-size: 2rem;
-    color:#1aa1f5;
+    color: #1aa1f5;
 }
 
-.modal-footer{
-    padding:0 2rem 2rem 8rem;
+.modal-footer {
+    padding: 0 2rem 2rem 8rem;
 }
 
-.modal-icons{
+.modal-icons {
     display: flex;
     align-items: center;
 }
 
-.modal-icons i{
-   margin-right: 2rem; 
-   font-size: 2.7rem;
+.modal-icons i {
+    margin-right: 2rem;
+    font-size: 2.7rem;
     color: #1aa1f5;
 }
 
-.modal-icons span{
+.modal-icons span {
     margin-left: auto;
     font-size: 5rem;
     width: 4rem;
@@ -859,6 +873,165 @@ body{
     color: #1aa1f5;
     opacity: .5;
 }
+
 /* post modal */
 
+
+/* sidebar */
+.sidebar-wrapper {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -30rem;
+    width: 30rem;
+    height: 100vh;
+    background-color: #fff;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    box-shadow: -.1rem 0 .5rem rgba(0, 0, 0, 0.3);
+    transition: right 0.5s cubic-bezier(1,0,0,1)
+}
+
+.sidebar-display {
+    right: 0;
+    transition: all 0.3s;
+}
+.sidebar-wrapper-display {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+}
+
+
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    border-bottom: .1rem solid #eee;
+}
+
+.sidebar-header h2 {
+    font-size: 2rem;
+}
+
+.sidebar-header i {
+    margin-left: auto;
+    font-size: 2.5rem;
+    color: #1aa1f5;
+    cursor: pointer;
+}
+
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.sidebar-user-img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.sidebar-user-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar-user span {
+    margin-left: auto;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 5rem;
+    border-radius: 50%;
+    border: 0.1rem solid #1aa1f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1aa1f5;
+}
+
+.sidebar-user-info{
+    padding: 1.rem 0 ;
+    font-size: 1.8rem;
+}
+
+.sidebar-user-info h4{
+    margin-bottom: 0.5rem;  
+}
+
+.following{
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+.following-paragraph{
+    font-size: 1.8rem;
+}
+
+.following-paragraph:first-child{
+    margin-right: 1rem;
+}
+
+.following-paragraph span{
+    font-weight: bold;
+}
+
+.sidebar-list-1{
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar-list-1 ul{
+    list-style-type: none;
+    padding: 1.5rem 0;
+}
+
+.sidebar-list-1 li{
+  margin-bottom: 2.5rem;
+}
+
+.sidebar-list-1 a{
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar-list-1 a:hover{
+    color: #1aa1f5;
+}
+
+.sidebar-list-1 i{
+    margin-right: 1rem;
+}
+
+.sidebar-list-2 ul{
+    list-style-type: none;
+    padding: 3rem 0;
+}
+
+.sidebar-list-2 li{
+  margin-bottom: 2.5rem;
+}
+
+.sidebar-list-2 a{
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* sidebar */
 /* end of feeds page */
