@@ -1,141 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pwitter</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Poppins&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- main page -->
 
-    <section class="main-page">
-      <!-- left -->
-      <div class="left">
-        <div class="left-content">
-          <div>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <h3 class="left-content-heading">Find your interests</h3>
-          </div>
-          <div>
-            <i class="fa-solid fa-users"></i>
-            <h3 class="left-content-heading">
-              Explore what people are talking about
-            </h3>
-          </div>
-          <div>
-            <i class="fas fa-comment"></i>
-            <h3 class="left-content-heading">Join the people</h3>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pwitter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Poppins&family=Roboto&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- main page -->
+
+  <section class="main-page">
+    <!-- left -->
+    <div class="left">
+      <div class="left-content">
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h3 class="left-content-heading">Find your interests</h3>
+        </div>
+        <div>
+          <i class="fa-solid fa-users"></i>
+          <h3 class="left-content-heading">
+            Explore what people are talking about
+          </h3>
+        </div>
+        <div>
+          <i class="fas fa-comment"></i>
+          <h3 class="left-content-heading">Join the people</h3>
         </div>
       </div>
-      <!-- end left -->
+    </div>
+    <!-- end left -->
 
-      <!-- right -->
-      <div class="right">
-        <form class="right-content-form">
-          <input
-            type="text"
-            class="user-info"
-            placeholder="Phone,email,or username"
-          />
+    <!-- right -->
+    <div class="right">
+      <form class="right-content-form">
+        <input type="text" class="user-info" placeholder="Phone,email,or username" />
 
-          <div class="">
-            <input type="password" class="password" placeholder="Password" />
-            <label for="">Forgot password ?</label>
+        <div class="">
+          <input type="password" class="password" placeholder="Password" />
+          <label for="">Forgot password ?</label>
+        </div>
+        <button type="button" class="btn-top">Login</button>
+      </form>
+      <div class="middle-content">
+        <i class="fas fa-dove"></i>
+        <h1>What's happening in the world</h1>
+        <h4>Join Pwitter today</h4>
+        <button type="button" class="sign-up">Sign up</button>
+        <button type="button" class="log-in">log in</button>
+      </div>
+    </div>
+    <!-- end of right -->
+    <footer class="main-page-footer">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Apps</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Brand</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#"> by papabn @2023 pwitter</a></li>
+      </ul>
+    </footer>
+  </section>
+
+  <!-- end of main page -->
+
+  <!-- login page  -->
+  <section class="login-page">
+    <!-- log in page nav -->
+    <nav class="login-page-nav">
+      <ul>
+        <li>
+          <a href="#" class="brand"><i class="fas fa-dove"></i>Home</a>
+        </li>
+        <li><a href="#" class="brand">About</a></li>
+        <li><a href="#" class="brand">Language:English</a></li>
+      </ul>
+    </nav>
+    <!-- end of login page nav -->
+    <!-- login-->
+    <div class="login">
+      <div class="login-content">
+        <h2>Log in to pwitter</h2>
+        <form class="login-form">
+          <input type="text" class="user-info" placeholder="Phone,email,or username" />
+          <input type="password" class="user-info" placeholder="password" />
+
+          <div>
+            <button type="button" class="login-form-btn">Log in</button>
+            <input type="checkbox" class="login-form-checkbox" id="check">
+
+            <label for="check">Remember me</label>
+            <a href="#">forgot password</a>
           </div>
-          <button type="button" class="btn-top">Login</button>
         </form>
-        <div class="middle-content">
-          <i class="fas fa-dove"></i>
-          <h1>What's happening in the world</h1>
-          <h4>Join Pwitter today</h4>
-          <button type="button" class="sign-up">Sign up</button>
-          <button type="button" class="log-in">log in</button>
+      </div>
+      <footer class="login-footer">
+        <p>new to pwitter? <a href="#">sign up now</a></p>
+        <p>
+          Already using pwitter via text message?
+          <a href="#">Activate your account</a>
+        </p>
+      </footer>
+    </div>
+    <!-- end of login-->
+  </section>
+  <!-- end login page  -->
+
+  <!-- feed page -->
+  <section class="feeds-page">
+    <!-- feeds nav -->
+    <nav class="feeds-nav">
+      <div class="icons">
+        <a href="#" class="active"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fas fa-hashtag"></i></a>
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search Twitter" class="search-bar-input">
+      </div>
+      <div class="user">
+        <div class="user-img-wrapper">
+          <img src="images/messi post.jpeg" alt="" ">
+        </div>
+        <a href="#" class="user-link">PAPA BN</a>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </nav>
+    <!-- feeds nav -->
+
+    <!-- feeds content -->
+    <div class="feeds-content">
+      <div class="feeds-header">
+        <div class="header-top">
+          <h4>Home</h4>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="header-post">
+          <div class="header-img-wrapper">
+            <img src="images/messi post.jpeg" alt="" ">
+          </div>
+          <input type="text" placeholder="What's happening?" class="header-post-input">
+          <i class="far fa-image"></i>
+          <i class="fas fa-camera"></i>
+          <i class="far fa-chart-bar"></i>
         </div>
       </div>
-      <!-- end of right -->
-      <footer class="main-page-footer">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Apps</a></li>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Status</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Brand</a></li>
-          <li><a href="#">Developers</a></li>
-          <li><a href="#"> by papabn @2023 pwitter</a></li>
-        </ul>
-      </footer>
-    </section>
 
-    <!-- end of main page -->
+      <div class="posts">
+        <div class="post">
+          <div class="user-avatar">
+            <img src="images/messi post.jpeg" alt="">
 
-    <!-- login page  -->
-    <section class="login-page">
-      <!-- log in page nav -->
-      <nav class="login-page-nav">
-        <ul>
-          <li>
-            <a href="#" class="brand"><i class="fas fa-dove"></i>Home</a>
-          </li>
-          <li><a href="#" class="brand">About</a></li>
-          <li><a href="#" class="brand">Language:English</a></li>
-        </ul>
-      </nav>
-      <!-- end of login page nav -->
-      <!-- login-->
-      <div class="login">
-        <div class="login-content">
-          <h2>Log in to pwitter</h2>
-          <form class="login-form">
-            <input
-              type="text"
-              class="user-info"
-              placeholder="Phone,email,or username"
-            />
-            <input type="password" class="user-info" placeholder="password" />
+          </div>
 
-            <div>
-              <button type="button" class="login-form-btn">Log in</button>
-              <input type="checkbox" class="login-form-checkbox" id="check">
-                
-             
-              <label for="check">Remember me</label>
-              <a href="#">forgot password</a>
+          <div class="post-content">
+            <div class="post-user-info">
+              <h4>Lionel Messi</h4>
+              <i class="fas fa-check-circle"></i>
+              <span>@leomessi 16m</span>
             </div>
-          </form>
+            <p class="post-text">
+             I finish the game i am the only GOAT
+            </p>
+            <div class="post-img">
+              <img src="images/messi post.jpeg" alt="">
+
+            </div>
+            <div class="post-icons">
+              <i class="far fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share"></i>
+            </div>
+          </div>
         </div>
-        <footer class="login-footer">
-          <p>new to pwitter? <a href="#">sign up now</a></p>
-          <p>
-            Already using pwitter via text message?
-            <a href="#">Activate your account</a>
-          </p>
+        <div class="post">
+          <div class="user-avatar">
+            <img src="images/user3.jpg" alt="">
+          </div>
+
+          <div class="post-content">
+            <div class="post-user-info">
+              <h4>elon musk</h4>
+              <i class="fas fa-check-circle"></i>
+              <span>@elonmusk 16m</span>
+            </div>
+            <p class="post-text">
+              Yess sir
+            </p>
+            <div class="post-img">
+              <img src="images/messi post.jpeg" alt="">
+            </div>
+            <div class="post-icons">
+              <i class="far fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="user-avatar">
+            <img src="images/cr7peg.jpeg" alt="">
+          </div>
+
+          <div class="post-content">
+            <div class="post-user-info">
+              <h4>cr7</h4>
+              <i class="fas fa-check-circle"></i>
+              <span>@cr7</span>
+            </div>
+            <p class="post-text">
+              I am finito guys
+            </p>
+            <div class="post-img">
+              <img src="images/finito.jpeg" alt="">
+            </div>
+            <div class="post-icons">
+              <i class="far fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="user-avatar">
+            <img src="images/user5.jpg" alt="">
+          </div>
+
+          <div class="post-content">
+            <div class="post-user-info">
+              <h4>tyler</h4>
+              <i class="fas fa-check-circle"></i>
+              <span>@tyler 16m</span>
+            </div>
+            <p class="post-text">
+             look at this 
+            </p>
+            <div class="post-img">
+              <img src="images/post-img-1.jpg" alt="">
+            </div>
+            <div class="post-icons">
+              <i class="far fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-share"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="follow">
+        <h3 class="follow-heading">Who to follow</h3>
+        <div class="follow-user">
+          <div class="follow-user-img">
+            <img src="images/user3.jpg" alt="" ">
+          </div>
+          <div class="follow-user-info">
+            <h4>natalis</h4>
+            <p>@nat32</p>
+          </div>
+          <button type="button" class="follow-btn">Follow</button>
+        </div>
+        <div class="follow-user">
+          <div class="follow-user-img">
+            <img src="images/user2.jpg" alt="" ">
+          </div>
+          <div class="follow-user-info">
+            <h4>bunko</h4>
+            <p>@bun</p>
+          </div>
+          <button type="button" class="follow-btn">Follow</button>
+        </div>
+        <div class="follow-user">
+          <div class="follow-user-img">
+            <img src="images/user4.jpg" alt="" >
+          </div>
+          <div class="follow-user-info">
+            <h4>sitamo</h4>
+            <p>@stmo</p>
+          </div>
+          <button type="button" class="follow-btn">Follow</button>
+
+        </div>
+        <div class="follow-link">
+          <a href="#">show more</a>
+        </div>
+        <footer class="follow-footer">
+          <ul>
+            <li><a href="#">tERMS</a></li>
+            <li><a href="#">PRIVACY</a></li>
+            <li><a href="#">COKKIES</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">MORE</a></li>
+          </ul>
         </footer>
       </div>
-      <!-- end of login-->
-    </section>
-    <!-- end login page  -->
 
-    <script src="script.js"></script>
-  </body>
+
+      <!-- feeds content -->
+    <!-- button -->
+    <button type="button" class="post-btn">
+      +<i class="fas fa-feather-alt"></i>Post
+    </button>
+    <!-- button -->
+  </section>
+  <!-- feed page -->
+
+  <script src="script.js"></script>
+</body>
+
 </html>
